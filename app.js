@@ -15,9 +15,12 @@ book.prototype.work=function()
 {
         return this.page;
 }
+book.prototype.publishedDate=1992;
+
 
 let bookinfo=new book("prakash","stock market",150);
-console.log("the working history is ",bookinfo.work())
+console.log("the working history is ",bookinfo.work(),"the publish date of the book is:",bookinfo.publishedDate);
+console.log(bookinfo)
 var bookinfo2=new book("rabindra","market",250);
 console.log(bookinfo,bookinfo2);
 console.log(new book("prakash lamichhane","maya ko pool",900));
