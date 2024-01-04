@@ -7,7 +7,13 @@ let fruit3=fruits.join("+");
 console.log(fruit3)
 const fruit5=fruits.shift();
 console.log(fruits);
+// console.log(fruit5.unshift("omprakash"))
+// fruit5.unshift('omprakash')
 
 fruits.forEach((key,index)=>{
     console.log(key,index);
-})
+});
+
+const myBoys = ["Emil", "Tobias", "Linus"];
+const newarray=fruits.concat(myBoys);
+console.log(newarray);
