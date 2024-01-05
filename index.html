@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Container Example</title>
+  <style>
+    /* Optional: Add some basic styling for better visualization */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .box {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      background-color: #f9f9f9;
+    }
+    p ~ .box {
+
+  background-color: lightblue;
+}
+div p:nth-child(1){
+        background-color: red;
+        
+}
+
+  </style>
 </head>
 <body>
-    <h1>hello i am omprakash lamichhane</h1>
-    <script src="app4.js"></script>
+
+<div class="container">
+    <p>hello</p>
+  <div class="box">
+    <h1>First Heading</h1>
+    <p>This is the first paragraph.</p>
+  </div>
+
+  <div class="box">
+    <h1>Second Heading</h1>
+    <p>This is the second paragraph.</p>
+  </div>
+
+  <div class="box">
+    <h1>Third Heading</h1>
+    <p>This is the third paragraph.</p>
+  </div>
+  <div class="omp">
+    <p>hello </p>
+    <p>i</p>
+    <p>om</p>
+    <p>prakash</p>
+    <p>lamichahne</p>
+  </div>
+</div>
+<script>
+    // const p=document.getElementsByTagName('p');
+    // console.log(p);
+    // for(let i=0;i<p.length;i++)
+    // {
+                
+    //     console.log(p[i].innerHTML);
+    //     if(p[i].innerHTML=="This is the first paragraph.")
+    //     {
+    //         p[i].style.backgroundColor="red"
+    //     }
+    // }
+
+    const p=document.querySelectorAll(".container .box p");
+    console.log(p);
+    // p.forEach((key,index)=>{
+    //       console.log(key.innerHTML);
+    // })
+    // console.log(p);
+    
+</script>
 </body>
+</html>
+
 </html>
