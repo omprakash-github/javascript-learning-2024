@@ -17,3 +17,20 @@ const persons = [
   })
 
   console.log(personname);
+  const vehicleOne = [{
+    brand: 'Ford',
+    model: 'Mustang',
+    type: 'car',
+    year: 2021, 
+    color: 'red',
+    registration: {
+      city: 'Houston',
+      state: 'Texas',
+      country: 'USA'
+    },
+  }];
+const country =vehicleOne.map((key)=>
+{
+     console.log(key.registration)
+})
+console.log(country);
