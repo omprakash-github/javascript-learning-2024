@@ -1,7 +1,7 @@
 let h1=document.querySelector(".box1 > button");
 console.log(h1);
 
-function name()
+function walk()
 {
-    console.log("hello i am omprakash lamichhane");
+    h1.innerText="hello i am omprakash"
 }
