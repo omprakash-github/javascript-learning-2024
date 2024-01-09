@@ -13,3 +13,18 @@ function Student(name, year, day, birthday) {
 
 studentDetail=new Student("prakash",2078,20,[58,98,78])
 console.log(studentDetail);
+
+
+function car(carName,manufacture,what)
+{
+    this.carName=carName;
+    this.manufacture=manufacture;
+    this.what=what;
+    this.about=function()
+    {
+        console.log("my manufacture is from india");
+    }
+};
+
+const cardetail=new car("bmw","india","omprakash");
+console.log(cardetail.about());
