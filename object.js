@@ -14,6 +14,7 @@ function Student(name, year, day, birthday) {
 studentDetail=new Student("prakash",2078,20,[58,98,78])
 console.log(studentDetail);
 
+//constructor lai chai new constructor bolauxa 
 
 function car(carName,manufacture,what)
 {

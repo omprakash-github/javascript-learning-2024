@@ -21,3 +21,4 @@ p.style.color="white";
 
 let li=document.querySelectorAll("li");
 li[0].classList.add("box");
+"strict"
