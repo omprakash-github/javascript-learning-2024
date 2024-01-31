@@ -17,3 +17,12 @@ const prakashDetail = new person("prakash", "lamichhane");
 const tikaramDetail = new person("tikaram", "lamichhane");
 console.log(prakashDetail, tikaramDetail, omprakashDetail.firstname);
 console.log(prakashDetail instanceof person);
+person.prototype.calAge=function()
+{
+  return 2019-1000;
+}
+omprakashDetail.calAge();
+//prototype bata chai bahira bata function halna sakinxa hai tai nai ho concept aru khai hoina sathi
+console.log(person.prototype);
+console.log(omprakashDetail.calAge());
+console.log(omprakashDetail.__proto_==person.prototype);
