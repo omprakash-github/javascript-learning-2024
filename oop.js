@@ -26,3 +26,4 @@ omprakashDetail.calAge();
 console.log(person.prototype);
 console.log(omprakashDetail.calAge());
 console.log(omprakashDetail.__proto_==person.prototype);
+//yasma chai object bata linxa hai scope changing jastai raxa
