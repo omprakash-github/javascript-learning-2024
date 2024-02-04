@@ -1,16 +1,19 @@
-let stocks = {
-  fruits: ["apple", "mango", "banana"],
-  liquid: ["water", "ice"],
-  holder: ["cone", "cup", "stick"],
-  topping: ["chocalates", "peanut"],
-};
-let is_shop_open = true;
-let order = () => {
-  return new promise((resolve, reject) => {
-    if (is_shop_open) {
-      resolve();
-    } else {
-      reject();
-    }
-  });
-};
+// new Promise(function(resolve,reject){
+//   setTimeout(() => {
+//     console.log("some promised is done");
+//   }, 2000);
+//   resolve();
+// }).then(function(){
+//   console.log("promised is solved hai");
+// })
+const promise =new Promise(function(resolve,reject){
+  setTimeout(()=>{
+    console.log("hello this is assync task hai");
+    resolve({name:"omprakashlamichhane"});
+  },4000)
+})
+promise.then(function(user)
+{
+  console.log(user);
+  console.log("this is the resolve statement hai dost")
+})
